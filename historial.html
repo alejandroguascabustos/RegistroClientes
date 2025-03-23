@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Servicios - Bicitienda</title>
+    <link rel="icon" href="/5. Registro de clientes/Img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="encabezado-global">
+            <!-- Creamos un contenedor que tenga imagen y logo -->
+                <div class="logo-title">
+                    <img class="logo" src="img/logo.png" alt="logo empresa">
+                    <a href="index.html">Bicitienda</a>
+                </div>
+                <nav>
+                    <a href="index.html" class="ver-registros" alt="historial de facturas" >Registro</a>
+                </nav>
+        </div>
+    </header>
+
+    <div class="contentlist">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Telefono</th>
+                        <th>Identificación</th>              
+                        <th>Servicio</th>             
+                        <th class="Coments">Cometarios</th>             
+                        <th>Total</th>              
+                        <th>Opciones</th>              
+                    </tr>
+                </thead>
+                <tbody id="tabla-body">
+                    <!-- Aquí se insertarán los registros dinámicamente -->
+                </tbody>
+            </table>
+    </div>
+
+<script src="script.js"></script>
+
+<footer>
+    <p>Mecabikes Store - 2025</p>
+</footer>
+
+</body>
+</html>

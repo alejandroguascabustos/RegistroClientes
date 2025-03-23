@@ -1,0 +1,335 @@
+/* Paleta de colores
+Azul claro: #2898ee
+Azul medio: #15297c
+Azul oscuro: #142157 */
+
+/* ---- ESTILOS GENERALES ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    zoom: 100%;
+}
+/* ---- ESTILO GLOBAL ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Img/Fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de opacidad */
+    background-blend-mode: darken;
+    text-align: center; /* Centra el contenido */
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ---- ENCABEZADO ---- */
+header {
+    color: white;
+    width: 100%;
+    background-color: black;
+
+}
+
+div.encabezado-global {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+
+}
+
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.logo-title a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Lexend", sans-serif;
+}
+
+h4 {
+    margin: 3px 0;
+    margin-left: 32%;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    font-family: "Lexend", sans-serif !important;
+}
+
+span.titlecolor{
+    color: #50D3D3;
+}
+
+/* ---- BOTONES ---- */
+a.ver-registros, .volver {
+
+    color: white;
+    padding: 5px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    border: solid #50D3D3;
+}
+
+.ver-registros:hover, .volver:hover {
+    transition: 0.5s;
+    background: white;
+    color: black;
+
+    
+}
+
+
+/* CONTENIDO INDEX */
+
+.contenidoindex {
+    position: absolute;
+    right: 20%; /* Ajusta según necesites */
+    top: 50%;
+    max-width: 180px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre botones */
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #50D3D3;
+    color: black;
+    border: none;
+    border-radius: 15px;
+}
+
+
+/* ---- FORMULARIO ---- */
+
+div.encabezadoform{
+    display: flex;
+    justify-content: space-between;
+}
+
+img.bicicletaregistro{
+    width: 50px;
+}
+
+div.content{
+    margin-top: 30px;
+    display: flex;
+    margin-right: 20%;
+}
+
+div.contentlist{
+    margin-top: 50px;
+    display: flex;
+}
+
+div.text-content{
+    margin-left: 170px;
+}
+
+div.text-content div p{
+    margin: 3px 0;
+    margin-left: 32%;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(143, 143, 143);
+    font-family: "Lexend", sans-serif !important;
+}
+
+p.titleform{
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-align: left;
+    font-family: "Lexend", sans-serif !important;
+}
+
+form {
+    background: white;
+    padding: 16px;
+    width: 90%;
+    max-width: 440px;
+    margin-left: 15%;
+    border-radius: 8px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+
+input, select, option{
+    width: 100%;
+    padding: 7px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    font-size: 13px;
+    color: #999;
+}
+
+select, select option{
+    font-size: 13px !important;
+    color: #999; /* Color del texto dentro del select */
+}
+
+/* Caja de texto Observaciones */
+.observations {
+    width: 100%;  /* Ocupa todo el ancho disponible */
+    height: 80px;  /* Altura suficiente para escribir varias líneas */
+    padding: 10px;  /* Espacio interno para el texto */
+    border: 1px solid #ccc;  /* Borde sutil */
+    border-radius: 8px;  /* Esquinas redondeadas */
+    resize: none;  /* Evita que el usuario cambie el tamaño */
+    overflow: hidden;  /* Evita el colapso del contenido */
+    font-size: 14px;
+}
+
+.observations::placeholder {
+    text-align: left;  /* Alinea el placeholder a la izquierda */
+    font-size: 14px;
+    color: gray;
+}
+
+
+
+.botonform {
+    background: #50D3D3;
+    color: black;
+    padding: 3px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.botonform:hover {
+    transition: 0.3s;
+    background: transparent;
+    border: 1px solid #50D3D3;
+    color: black;
+}
+
+/* ELIMINA LAS FLECHAS DE INPUTS NUMBRE */
+/* Para Chrome, Safari y Edge */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none; /* Chrome, Safari */
+    appearance: none; /* Estándar */
+}
+
+
+
+/* ---- TABLA ---- */
+
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    table-layout: auto;
+
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 12px;
+    word-wrap: break-word;
+    max-width: 150px;
+}
+
+th {
+    background: #50D3D3;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+}
+
+td:nth-child(5) { /* Ajusta este número si la columna "Comentarios" está en otra posición */
+    white-space: normal; /* Permite que el texto haga saltos de línea */
+    max-width: 200px; /* Ajusta el ancho máximo según lo que necesites */
+    overflow-wrap: break-word; /* Asegura que las palabras largas se dividan */
+}
+
+
+
+th.coments{
+    width: 230px;
+}
+
+/* ---- BOTONES DE ACCIÓN ---- */
+button.editar, button.eliminar {
+    padding: 3px 6px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button.editar {
+    background: #50D3D3;
+    color: white;
+}
+
+button.eliminar {
+    background: #dc3545;
+    color: white;
+}
+
+button.editar:hover {
+    background: white;
+    color: black;
+    border: 1px solid;
+}
+
+button.eliminar:hover {
+    background: #c82333;
+}
+
+/* ---- PIE DE PÁGINA ---- */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto;
+    font-size: 10px;
+}

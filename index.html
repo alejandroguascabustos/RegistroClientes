@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Servicios - Bicitienda</title>
+    <link rel="icon" href="/5. Registro de clientes/Img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="encabezado-global">
+            <!-- Creamos un contenedor que tenga imagen y logo -->
+                <div class="logo-title">
+                    <img class="logo" src="img/logo.png" alt="logo empresa">
+                    <a href="index.html">Bicitienda</a>
+                </div>
+                <nav>
+                    <a href="historial.html" class="ver-registros" alt="historial de facturas" >Historial</a>
+                </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="text-content"">
+            <div>
+                <h4>Bienvenido al sistema de registro de la <span class="titlecolor">Bicitienda</span></h4>
+                <p><br>Aquí podrás guardar registros de todos los servicios que se presten</p>
+            </div>
+        </div>
+        <form id="crud-form">
+            <div>
+                <div class="encabezadoform">    
+                  <p class="titleform">REGISTRA AQUÍ SERVICIOS</p>
+                  <img class="bicicletaregistro" src="Img/Bicicleta.gif" alt="Bicicleta registro">
+                </div>
+                <input type="text" id="nombre" placeholder="Nombre del Cliente" required>
+                <input type="number" id="telefono" placeholder="Telefono" required>
+                <input type="number" id="identificacion" placeholder="Identificación" required>
+                <select name="servicio" id="servicio">
+                    <option value="">Seleccione un servicio</option>
+                    <option value="Mantenimiento">Mantenimiento</option>
+                    <option value="Reparación">Reparación</option>
+                    <option value="Venta de repuesto">Venta de repuesto</option>
+                    <option value="Venta bicicleta">Venta bicicleta</option>
+                </select>
+                <textarea id="observaciones" class="observations" placeholder="Observaciones" required></textarea>
+                <input type="text" id="total" placeholder="Valor total" required>
+                <button class="botonform" type="submit">Guardar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- BOTÓN PARA IR A LOS REGISTROS -->
+       
+<script src="script.js"></script>
+<footer>
+    <p>Mecabikes Store - 2025</p>
+</footer>
+</body>
+</html>
