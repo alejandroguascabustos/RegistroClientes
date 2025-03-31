@@ -71,7 +71,7 @@ div.encabezado-global {
 
 h4 {
     margin: 3px 0;
-    margin-left: 32%;
+    margin-left: 22%;
     text-align: left;
     font-size: 25px;
     color: white;
@@ -155,7 +155,7 @@ div.text-content{
 
 div.text-content div p{
     margin: 3px 0;
-    margin-left: 32%;
+    margin-left: 22%;
     text-align: left;
     font-size: 20px;
     color: rgb(143, 143, 143);
@@ -172,12 +172,12 @@ p.titleform{
 form {
     background: white;
     padding: 16px;
-    width: 90%;
+    width: 60%;
     max-width: 440px;
-    margin-left: 15%;
     border-radius: 8px;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
 }
+
 
 input, select, option{
     width: 100%;
@@ -320,7 +320,9 @@ button.editar:hover {
 }
 
 button.eliminar:hover {
-    background: #c82333;
+    background: white;
+    border: #dc3545 solid 0.5px;
+    color: red;
 }
 
 /* ---- PIE DE PÁGINA ---- */
@@ -332,4 +334,70 @@ footer {
     width: 100%;
     margin-top: auto;
     font-size: 10px;
+}
+
+/* Pop-up */
+
+form#editar-form{
+    width: 350px;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    z-index: 1000;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar el contenido del formulario */
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.popup-content button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.popup-content button[type="button"] {
+    background-color: #ccc;
+    color: black;
+}
+
+
+/* Estilo para ocultar elementos */
+.hidden {
+    display: none;
 }
